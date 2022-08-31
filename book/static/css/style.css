@@ -1,0 +1,289 @@
+
+*{
+    position: relative; 
+}
+body{
+
+    background-color: #04243b;
+}
+.navstyle{
+    
+    background-color: #03263f;
+    position: relative;
+    height: 100px;
+}
+.datetime{
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    width: 200px;
+    /* border: 3px solid #2e94e3; */
+    padding: 5px 5px;
+    font-family:"segoe ui",sens-serif;
+    border-radius: 5px;
+}
+/* .datetime:hover{
+    background-color: #2e94e3;
+    box-shadow:0 0 30px #2e94e3;
+} */
+
+.date{
+    font-size:11px;
+    font-weight:600;
+    text-align: center;
+    letter-spacing:2px;
+}
+.time{
+    font-size:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align:center;
+    letter-spacing:1px;
+}
+.time span:last-child{
+    background:#2e94e3;
+    font-size: 12px;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-top:8px;
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+.img{
+    height: 40px;
+    width: 70px;
+}
+.logo{
+    position: absolute;
+    top: -5px;
+    left: 100px;
+    font-size:50px;
+    font-weight:600;
+    text-transform:uppercase;
+    color: #fff;
+    font-family:"Arial Bold",sans-serif; 
+}
+
+.footer{
+    background-color: #03263f;
+    position: relative;
+    height: 50px;
+    color: #fff;
+    font-family:"Arial Bold",sans-serif;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.xcard{
+    height:100%;
+    width: 180;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.displayContaint{
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 100%;
+    background-color: #0a314d;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+
+}
+/* .displayCon{
+    background-color: #c6cdd2;
+    opacity: 0.5;
+} */
+
+
+#myimg{
+    top: 30px;
+    right: 300px;
+    float: right;
+
+} 
+#myimg2{
+    bottom: 450px;
+    right: 300px;
+    float: right;
+    
+}
+
+
+.book-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 600px;
+    left : 0px;
+    top : 0px;
+    position: absolute;
+    
+  }
+  
+
+  
+  .book {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(-30deg);
+    transition: 1s ease;
+    animation: 1s ease 0s 1 initAnimation;
+  }
+  
+  
+  .book > :first-child {
+    position: absolute;
+    background-color: red;
+    width: 200px;
+    height: 300px;
+    transform: translateZ(30px);
+    background-color: #01060f;
+    border-radius: 0 2px 2px 0;
+    box-shadow: 5px 5px 20px #666;
+  }
+  
+  .book::before {
+    position: absolute;
+    content: ' ';
+    background-color: blue;
+    left: 0;
+    top: 3px;
+    width: 48px;
+    height: 294px;
+    transform: translateX(172px) rotateY(90deg);
+    background: linear-gradient(90deg, 
+      #fff 0%,
+      #f9f9f9 5%,
+      #fff 10%,
+      #f9f9f9 15%,
+      #fff 20%,
+      #f9f9f9 25%,
+      #fff 30%,
+      #f9f9f9 35%,
+      #fff 40%,
+      #f9f9f9 45%,
+      #fff 50%,
+      #f9f9f9 55%,
+      #fff 60%,
+      #f9f9f9 65%,
+      #fff 70%,
+      #f9f9f9 75%,
+      #fff 80%,
+      #f9f9f9 85%,
+      #fff 90%,
+      #f9f9f9 95%,
+      #fff 100%
+      );
+  }
+  
+  .book::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    width: 200px;
+    height: 300px;
+    transform: translateZ(-25px);
+    background-color: #01060f;
+    border-radius: 0 2px 2px 0;
+    box-shadow: -10px 0 50px 10px #666;
+  }
+  
+
+
+
+    
+
+
+
+
+ .cardcontainer{
+    background-color: #1f3e53;
+    max-height: 400px;
+    /* height: 100px; */
+    margin: 0px 0px 0px 0px; 
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column
+    
+
+
+ }
+
+ .tile{
+    color: #fff;
+    padding: 0px 10px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    float: left;
+    text-align: left;
+    /* display: flex; */
+    /* position: absolute; */
+ }
+
+ .imgcon{
+    height: 200px;
+    width: 140px;
+    margin-bottom: 0px;
+    padding-left: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+ }
+ 
+ .midtex{
+    color: #fff;
+    font-size: 20px;
+ }
+
+ .slidertext{
+    padding-top: 100px;
+    padding-left:50px;
+    width: 400px;
+    position: relative;
+
+ }
+
+ .lineimg{
+    width: 100%;
+ }
+
+ .bottomBar{
+    width:155px;
+    height:5px;
+    padding: 0px 5px 0px 0px;
+    margin: 0px 0px 0px 7px;
+    /* float: top; */
+    display: flex;
+ }
+
+
+ /* ADD BY HC */
+ .bookCardBody .imgcon:hover {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
