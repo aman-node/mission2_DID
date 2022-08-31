@@ -8,7 +8,7 @@ function updateClock() {
         minutes = now.getMinutes(),
         seconds = now.getSeconds(),
         period = "AM";
-
+ 
     if (hours == 0) {
         hours = 12;
     }
@@ -36,7 +36,7 @@ function initClock() {
 
 }
 
-function moveRight(img, tit, pdate) {
+function moveRight(img, tit) {
     var img_old = document.getElementById("imgid").src;
     var tit_old = document.getElementById("title_id").innerText;
     if (img_old == img && tit_old == tit) {return;}
@@ -60,6 +60,8 @@ $(document).ready(function () {
     $(".imgcon").click(function () {
         var img = $(this).attr("src");
         var tit = $(this).data("title");
+
+        console.log(tit)
         moveRight(img, tit);
     });
     
