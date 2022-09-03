@@ -8,7 +8,7 @@ function updateClock() {
         minutes = now.getMinutes(),
         seconds = now.getSeconds(),
         period = "AM";
- 
+
     if (hours == 0) {
         hours = 12;
     }
@@ -36,17 +36,22 @@ function initClock() {
 
 }
 
-function moveRight(img, tit) {
+// Add By HC
+function moveRight(img, tit, pdate) {
     var img_old = document.getElementById("imgid").src;
     var tit_old = document.getElementById("title_id").innerText;
-    if (img_old == img && tit_old == tit) {return;}
+    var pdate_old = document.getElementById("pubdate_id").innerText;
+    if (img_old == img && tit_old == tit && pdate_old == pdate) {return;}   // Detect if the same book is clicked
 
-    
+    // Hide the previous book by Animation
     $('#myimg').animate({ right: $(window).width()+$("#imgid").width()+"px" }, {
         easing: 'swing',
         complete: function () {
+            // Animation complete callback
+            // fade out Title E.t.c
             $(".slidertext").fadeOut(200, function () {
-                dispData(img, tit);
+                // On Hide Change Data and Again Show
+                dispData(img, tit, pdate);
                 $(".slidertext").fadeIn(200);
             });
 
@@ -60,23 +65,84 @@ $(document).ready(function () {
     $(".imgcon").click(function () {
         var img = $(this).attr("src");
         var tit = $(this).data("title");
-
-        console.log(tit)
-        moveRight(img, tit);
+        var pdate = $(this).data("pubdate");
+        moveRight(img, tit, pdate);
     });
     
 })
 
 
 
-function dispData(img, tit) {
+function dispData(img, tit, pdate) {
     const img1 = document.getElementById("imgid").src = img;
     const title = document.getElementById("title_id").innerText = tit;
+    const pub_date = document.getElementById("pubdate_id").innerText = pdate;
     document.getElementById("imgid").onload = function () {
 
+        // I have to use this function to make sure the image is loaded before the animation starts
+        // Please Comment Below Line and UnComment Abobe if Taking More Time Than Expected
         $("#myimg").css({ 'right': '', 'top': '-30px' });
         $("#myimg").animate({ top: '30px' });
     }
 }
 
 
+
+
+
+indexOfBook = 0;
+function refreshBook(){
+    indexOfBook++;
+    indexOfBook = indexOfBook >= $(".bookCardBody").length ? 0 : indexOfBook;
+    $("#booksdiv .bookCardBody:nth-child("+(indexOfBook+1)+") img:nth-child(1)").click()
+    // $(".bookCardBody").hide()
+
+    book = indexOfBook
+    start = parseInt(book/6)*6;
+    start = (start==-1) ? 0:start;
+    end = start+6
+    end--;
+    if(end+1 > $(".bookCardBody").length){
+        start = $(".bookCardBody").length - 6
+        end = $(".bookCardBody").length - 1
+    }
+
+    
+    console.log("Index",indexOfBook,"start",start,"end",end)
+    $(".bookCardBody").each(function(i) {
+        if(i>= start && i<=end){
+            $("#booksdiv .bookCardBody:nth-child("+(i+1)+")").show();
+        }
+        else{
+            $("#booksdiv .bookCardBody:nth-child("+(i+1)+")").hide();
+        }
+    })
+}
+book = indexOfBook
+start = parseInt(book/6)*6;
+start = (start==-1) ? 0:start;
+end = start+6
+end--;
+if(end+1 > $(".bookCardBody").length){
+    start = $(".bookCardBody").length - 6
+    end = $(".bookCardBody").length - 1
+}
+
+
+console.log("Index",indexOfBook,"start",start,"end",end)
+$(".bookCardBody").each(function(i) {
+    if(i>= start && i<=end){
+        $("#booksdiv .bookCardBody:nth-child("+(i+1)+")").show();
+    }
+    else{
+        $("#booksdiv .bookCardBody:nth-child("+(i+1)+")").hide();
+    }
+})
+
+
+
+// index = 0+1 / 6
+
+// 0,6,11
+
+setInterval(refreshBook,3000)

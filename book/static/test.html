@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/css/style.css">	
+</head>
+<body onload="initClock()">
+	
+	<nav class="navbar navbar-dark navstyle navbar-expand-lg" >
+		<div class="container-fluid stick nav-count">
+			<!-- date time -->
+			<div class="datetime">
+				<div class="date">
+					<span id="dayname">Day</span>
+					<span id="month">Month</span>
+					<span id="daynum">00</span>
+					<span id="year">Year</span>
+				</div>
+				<div class="time">
+					<span id="hour">00</span>:
+					<span id="minutes">00</span>:
+					<span id="seconds">00</span>
+					<span id="period">AM</span>
+				</div>
+			  </div>
+			  <a class="navbar-brand" href="#"><img src="/static/images/Untitled-2.jpg" alt="" srcset="" class="img"></a>
+			  <h1 class="logo">Wise Neosco</h1>
+		</div>
+	</nav>
+	<div class="container-fluid stick">
+		<!-- container 1 -->
+		<div class="row ">
+			<div class="col-lg-12 mb-4 displayContaint ">
+				<div id="myimg"> <span class="book-container"> <div  class="book" > <img src="//img.libbook.co.kr/V2/BookImgK17/9788959135882.gif" alt="" srcset="" id="imgid"></div></span></div>
+					<div class="slidertext">
+						<h1 class="midtex" id="title_id">유미의 세포들</h1>
+						<img src="/static/images/line.png" alt="" srcset="" class="lineimg" >
+						<h1 class="midtex" id="pubdate_id">이동건</h1>
+					</div>
+				</div>
+			</div>
+	  </div>
+	<!-- container 2 -->
+	<div class="cardcontainer ">
+		
+		<div class="row " id="booksdiv" >
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK17/9788959135882.gif class="card-img-top imgcon" alt="#" data-title="유미의 세포들" data-pubdate="이동건">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">유미의 세포들</h6><br />
+					<p class="tile">이동건</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9788934967316.gif class="card-img-top imgcon" alt="#" data-title="전지적 독자 시점 : 싱숑 장편소설. Part 1" data-pubdate="싱숑">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">전지적 독자 시점 : 싱숑 장편소설. Part 1</h6><br />
+					<p class="tile">싱숑</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK12/9788936472641.gif class="card-img-top imgcon" alt="#" data-title="송곳 : 최규석 만화" data-pubdate="최규석">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">송곳 : 최규석 만화</h6><br />
+					<p class="tile">최규석</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK4/8946035714.gif class="card-img-top imgcon" alt="#" data-title="(알기 쉬운) 도시이야기" data-pubdate="구자훈">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">(알기 쉬운) 도시이야기</h6><br />
+					<p class="tile">구자훈</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9788934972464.gif class="card-img-top imgcon" alt="#" data-title="사피엔스" data-pubdate="Harari, Yuval N.">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">사피엔스</h6><br />
+					<p class="tile">Harari, Yuval N.</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK12/8946001127.gif class="card-img-top imgcon" alt="#" data-title="서울도시계획이야기 : 서울 격동의 50년과 나의 증언" data-pubdate="손정목">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">서울도시계획이야기 : 서울 격동의 50년과 나의 증언</h6><br />
+					<p class="tile">손정목</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK1/8959321540.gif class="card-img-top imgcon" alt="#" data-title="약골무적 : 박성진 신무협 장편소설" data-pubdate="박성진">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">약골무적 : 박성진 신무협 장편소설</h6><br />
+					<p class="tile">박성진</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9791191114225.gif class="card-img-top imgcon" alt="#" data-title="작별인사 : 김영하 장편소설" data-pubdate="김영하">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">작별인사 : 김영하 장편소설</h6><br />
+					<p class="tile">김영하</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9791197377143.gif class="card-img-top imgcon" alt="#" data-title="어서 오세요, 휴남동 서점입니다 : 황보름 장편소설" data-pubdate="황보름">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">어서 오세요, 휴남동 서점입니다 : 황보름 장편소설</h6><br />
+					<p class="tile">황보름</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK9/8990708605.gif class="card-img-top imgcon" alt="#" data-title="비적 유성탄 = 飛賊流星彈 : 좌백 신무협 장편소설" data-pubdate="좌백">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">비적 유성탄 = 飛賊流星彈 : 좌백 신무협 장편소설</h6><br />
+					<p class="tile">좌백</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK12/9791131033333.gif class="card-img-top imgcon" alt="#" data-title="소림쌍괴 : 좌백 新무협 장편소설" data-pubdate="좌백">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">소림쌍괴 : 좌백 新무협 장편소설</h6><br />
+					<p class="tile">좌백</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9791189327156.gif class="card-img-top imgcon" alt="#" data-title="물고기는 존재하지 않는다 : 상실, 사랑 그리고 숨어 있는 삶의 질서에 관한 이야기" data-pubdate="Miller, Lulu">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">물고기는 존재하지 않는다 : 상실, 사랑 그리고 숨어 있는 삶의 질서에 관한 이야기</h6><br />
+					<p class="tile">Miller, Lulu</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK11/9788926770214.gif class="card-img-top imgcon" alt="#" data-title="은하영웅전설" data-pubdate="전중방수">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">은하영웅전설</h6><br />
+					<p class="tile">전중방수</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9788954648523.gif class="card-img-top imgcon" alt="#" data-title="친밀한 이방인 : 정한아 장편소설" data-pubdate="정한아">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">친밀한 이방인 : 정한아 장편소설</h6><br />
+					<p class="tile">정한아</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=https://library.uos.ac.kr/image/ko/solution/local/noCoverImg.jpg class="card-img-top imgcon" alt="#" data-title="열린사회와 그 敵들" data-pubdate="포퍼, 칼 R">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">열린사회와 그 敵들</h6><br />
+					<p class="tile">포퍼, 칼 R</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK4/9788973378319.gif class="card-img-top imgcon" alt="#" data-title="한강 : 조정래 대하소설 / 제2판" data-pubdate="조정래">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">한강 : 조정래 대하소설 / 제2판</h6><br />
+					<p class="tile">조정래</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9791187165859.jpg class="card-img-top imgcon" alt="#" data-title="모든 관계는 심리학으로 풀린다 : 원하는 대로 상대를 이끄는 관계의 심리학" data-pubdate="류혜인">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">모든 관계는 심리학으로 풀린다 : 원하는 대로 상대를 이끄는 관계의 심리학</h6><br />
+					<p class="tile">류혜인</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK4/8958621176.gif class="card-img-top imgcon" alt="#" data-title="조선의 문화공간 : 조선시대 문인의 땅과 삶에 대한 문화사. 1-4" data-pubdate="이종묵">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">조선의 문화공간 : 조선시대 문인의 땅과 삶에 대한 문화사. 1-4</h6><br />
+					<p class="tile">이종묵</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=https://library.uos.ac.kr/image/ko/solution/local/noCoverImg.jpg class="card-img-top imgcon" alt="#" data-title="(實錄小說)特別授査本部. 1 - 21" data-pubdate="오재호">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">(實錄小說)特別授査本部. 1 - 21</h6><br />
+					<p class="tile">오재호</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=https://library.uos.ac.kr/image/ko/solution/local/noCoverImg.jpg class="card-img-top imgcon" alt="#" data-title="Dewey decimal classification and relative index / Ed. 23 /" data-pubdate="Dewey, Melvil">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">Dewey decimal classification and relative index / Ed. 23 /</h6><br />
+					<p class="tile">Dewey, Melvil</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK11/9788937462665.gif class="card-img-top imgcon" alt="#" data-title="이방인" data-pubdate="Camus, Albert">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">이방인</h6><br />
+					<p class="tile">Camus, Albert</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9791168340510.gif class="card-img-top imgcon" alt="#" data-title="파친코 : 이민진 장편소설. 1" data-pubdate="이민진">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">파친코 : 이민진 장편소설. 1</h6><br />
+					<p class="tile">이민진</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK19/9788983927880.gif class="card-img-top imgcon" alt="#" data-title="해리포터. 5, 불사조 기사단 / 해리포터 20주년 개정판" data-pubdate="Rowling, J. K.">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">해리포터. 5, 불사조 기사단 / 해리포터 20주년 개정판</h6><br />
+					<p class="tile">Rowling, J. K.</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9788936434625.gif class="card-img-top imgcon" alt="#" data-title="튜브 : 손원평 장편소설" data-pubdate="손원평">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">튜브 : 손원평 장편소설</h6><br />
+					<p class="tile">손원평</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=https://library.uos.ac.kr/image/ko/solution/local/noCoverImg.jpg class="card-img-top imgcon" alt="#" data-title="(고등학교) 생활과 윤리 / 제4판" data-pubdate="변순용">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">(고등학교) 생활과 윤리 / 제4판</h6><br />
+					<p class="tile">변순용</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK19/9788954673105.jpg class="card-img-top imgcon" alt="#" data-title="여름의 빌라 : 백수린 소설" data-pubdate="백수린">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">여름의 빌라 : 백수린 소설</h6><br />
+					<p class="tile">백수린</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK13/9788937833663.gif class="card-img-top imgcon" alt="#" data-title="돈으로 살 수 없는 것들 : 무엇이 가치를 결정하는가" data-pubdate="Sandel, Michael J.">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">돈으로 살 수 없는 것들 : 무엇이 가치를 결정하는가</h6><br />
+					<p class="tile">Sandel, Michael J.</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=https://library.uos.ac.kr/image/ko/solution/local/noCoverImg.jpg class="card-img-top imgcon" alt="#" data-title="(고등학교) 생활과 윤리" data-pubdate="정창우">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">(고등학교) 생활과 윤리</h6><br />
+					<p class="tile">정창우</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9788946044708.gif class="card-img-top imgcon" alt="#" data-title="왈츠 이후 : 국제정치이론의 변화와 발전" data-pubdate="이근욱">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">왈츠 이후 : 국제정치이론의 변화와 발전</h6><br />
+					<p class="tile">이근욱</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK19/9791130336558.gif class="card-img-top imgcon" alt="#" data-title="민법입문 / 제8판" data-pubdate="양창수">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">민법입문 / 제8판</h6><br />
+					<p class="tile">양창수</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK1/9791130301235.gif class="card-img-top imgcon" alt="#" data-title="도시행정론 = Urban administration" data-pubdate="서울시립대학교. 도시행정학과">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">도시행정론 = Urban administration</h6><br />
+					<p class="tile">서울시립대학교. 도시행정학과</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK13/9791187206422.gif class="card-img-top imgcon" alt="#" data-title="저주 토끼 : 정보라 소설집" data-pubdate="정보라">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">저주 토끼 : 정보라 소설집</h6><br />
+					<p class="tile">정보라</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9788932474755.gif class="card-img-top imgcon" alt="#" data-title="헤어질 결심 : 각본" data-pubdate="정서경">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">헤어질 결심 : 각본</h6><br />
+					<p class="tile">정서경</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9788936438753.gif class="card-img-top imgcon" alt="#" data-title="아몬드 : 손원평 장편소설 / 한정판" data-pubdate="손원평">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">아몬드 : 손원평 장편소설 / 한정판</h6><br />
+					<p class="tile">손원평</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK11/9788959194117.gif class="card-img-top imgcon" alt="#" data-title="살인자ㅇ난감" data-pubdate="원종권">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">살인자ㅇ난감</h6><br />
+					<p class="tile">원종권</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=https://library.uos.ac.kr/image/ko/solution/local/noCoverImg.jpg class="card-img-top imgcon" alt="#" data-title="(고등학교) 생활과 윤리" data-pubdate="차우규">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">(고등학교) 생활과 윤리</h6><br />
+					<p class="tile">차우규</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9791197341311.jpg class="card-img-top imgcon" alt="#" data-title="오픽노잼 : 스크립트 없이 오픽 쌉가능" data-pubdate="오픽노잼">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">오픽노잼 : 스크립트 없이 오픽 쌉가능</h6><br />
+					<p class="tile">오픽노잼</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK13/9788965965046.gif class="card-img-top imgcon" alt="#" data-title="도파민네이션 : 쾌락 과잉 시대에서 균형 찾기" data-pubdate="Lembke, Anna">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">도파민네이션 : 쾌락 과잉 시대에서 균형 찾기</h6><br />
+					<p class="tile">Lembke, Anna</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9791130337944.gif class="card-img-top imgcon" alt="#" data-title="민사소송법 / 제3판" data-pubdate="한충수">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">민사소송법 / 제3판</h6><br />
+					<p class="tile">한충수</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK9/9791185872490.gif class="card-img-top imgcon" alt="#" data-title="세종한국어 / 증보판[2판]" data-pubdate="김정숙">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">세종한국어 / 증보판[2판]</h6><br />
+					<p class="tile">김정숙</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK19/9788959428755.jpg class="card-img-top imgcon" alt="#" data-title="상속·증여세 실무 해설 / 2020년판" data-pubdate="박훈">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">상속·증여세 실무 해설 / 2020년판</h6><br />
+					<p class="tile">박훈</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9788955017526.gif class="card-img-top imgcon" alt="#" data-title="원가관리회계 = Cost &amp; management accounting / 제7판[실은 8판]" data-pubdate="백태영">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">원가관리회계 = Cost &amp; management accounting / 제7판[실은 8판]</h6><br />
+					<p class="tile">백태영</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK13/9791190457187.gif class="card-img-top imgcon" alt="#" data-title="그림들 : 모마 미술관 도슨트북" data-pubdate="SUN 도슨트">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">그림들 : 모마 미술관 도슨트북</h6><br />
+					<p class="tile">SUN 도슨트</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK19/CPP0000147435.jpg class="card-img-top imgcon" alt="#" data-title="유시민의 글쓰기 특강" data-pubdate="유시민">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">유시민의 글쓰기 특강</h6><br />
+					<p class="tile">유시민</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=https://library.uos.ac.kr/image/ko/solution/local/noCoverImg.jpg class="card-img-top imgcon" alt="#" data-title="하급무사 : 좌백 新무협 장편소설" data-pubdate="좌백">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">하급무사 : 좌백 新무협 장편소설</h6><br />
+					<p class="tile">좌백</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK14/9791189909284.gif class="card-img-top imgcon" alt="#" data-title="(한 권으로 읽는) 컴퓨터 구조와 프로그래밍" data-pubdate="Steinhart, Jonathan E">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">(한 권으로 읽는) 컴퓨터 구조와 프로그래밍</h6><br />
+					<p class="tile">Steinhart, Jonathan E</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK19/9788931461572.gif class="card-img-top imgcon" alt="#" data-title="(이기적) SQL 개발자 : 이론서＋기출문제 : 국가공인자격검정 SQLD / [개정판]" data-pubdate="임호진">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">(이기적) SQL 개발자 : 이론서＋기출문제 : 국가공인자격검정 SQLD / [개정판]</h6><br />
+					<p class="tile">임호진</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9791158510619.gif class="card-img-top imgcon" alt="#" data-title="타이탄의 도구들 : 1만 시간의 법칙을 깬 거인들의 61가지 전략" data-pubdate="Ferriss, Timothy">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">타이탄의 도구들 : 1만 시간의 법칙을 깬 거인들의 61가지 전략</h6><br />
+					<p class="tile">Ferriss, Timothy</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9788932922362.gif class="card-img-top imgcon" alt="#" data-title="행성" data-pubdate="Werber, Bernard">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">행성</h6><br />
+					<p class="tile">Werber, Bernard</p>
+				</div>
+			</div>
+			
+			
+			<div class="col-lg-2 col-md-4 mb-4 bookCardBody ">
+					
+				<img src=//img.libbook.co.kr/V2/BookImgK15/9791161571379.gif class="card-img-top imgcon" alt="#" data-title="불편한 편의점 : 김호연 장편소설. 2" data-pubdate="김호연">
+				<img src="/static/images/line.png" class="bottomBar">
+				<div class="card-body text-center">
+					<h6 class="tile">불편한 편의점 : 김호연 장편소설. 2</h6><br />
+					<p class="tile">김호연</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<footer class="footer" >
+		<p>Designed and developed by </p>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/static/javascript/index.js"></script>
+	<script>
+	  AOS.init({
+	delay: 10,
+  	duration: 1500,
+	  });
+
+	
+	</script>
+    <script>
+        function imgWindow() {
+         window.open("image") }
+       </script>
+</body>
+</html>
