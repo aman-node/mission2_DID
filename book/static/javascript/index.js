@@ -95,6 +95,10 @@ function refreshBook(){
     indexOfBook++;
     indexOfBook = indexOfBook >= $(".bookCardBody").length ? 0 : indexOfBook;
     $("#booksdiv .bookCardBody:nth-child("+(indexOfBook+1)+") img:nth-child(1)").click()
+    $("#booksdiv .bookCardBody:nth-child("+(indexOfBook+1)+") img:nth-child(1)").addClass('hover_img');
+    setTimeout(() => {$("#booksdiv .bookCardBody:nth-child("+(indexOfBook+1)+") img:nth-child(1)").removeClass('hover_img');
+        
+    }, 1000);
     // $(".bookCardBody").hide()
 
     book = indexOfBook
@@ -139,10 +143,11 @@ $(".bookCardBody").each(function(i) {
     }
 })
 
+setInterval(refreshBook,5000)
 
-
-// index = 0+1 / 6
-
-// 0,6,11
-
-setInterval(refreshBook,3000)
+// function image(){
+//     $(".img_hoover").css({
+//         opacity:1
+//     })
+// }
+// setTimeout(image,1000)
