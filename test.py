@@ -1,4 +1,6 @@
+from tkinter import W
 import requests
+import json
 from bs4 import BeautifulSoup
 r = requests.get('https://library.uos.ac.kr/statistics/popularloanList')
  
@@ -35,6 +37,11 @@ for i in s:
     var={"smallUrl":images}
     new_list.append({"title":title,"author":author,"image":var})
 print(new_list)
+data=open("abc.txt","W")
+data.write(new_list)
+data.close()
+# json_string.write("/")
+
 
 
 

@@ -241,10 +241,10 @@
     
     .tile{
         color: #fff;
-        padding: 0vw 0vh 0vw 0vh;
-        margin: 0vw 0vh 0vw 0vh;
+        /* padding: 0vw 0vh 0vw 0vh; */
+        /* margin: 0vw 0vh 0vw 0vh; */
         /* float: left; */
-        text-align: center;
+        /* text-align: center; */
         font-size: 2vh;
         font-family: 'Noto Sans KR',sans-serif;
         display: -webkit-box;
@@ -254,25 +254,25 @@
         overflow: hidden;
         text-overflow: ellipsis;
         /* display: flex; */
-        position: absolute;
+        /* position: absolute; */
     }
     .auth{
         color: #fff;
-        top: 7vh;
-        padding: 1vw 0vh 0vw 3vh;
-        margin: 0vw 0vh 0vw 0vh;
+        top: -2vh;
+        /* padding: 1vw 0vh 0vw 3vh; */
+        /* margin: 0vw 0vh 0vw 0vh; */
         /* float: left; */
-        text-align: -webkit-center;
+        /* text-align: -webkit-center; */
         font-size: 2vh;
         font-family: 'Noto Sans KR',sans-serif;
         display: -webkit-box;
-        -webkit-line-clamp: 2S;
+        -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         max-width: -1vw;
         overflow: hidden;
         text-overflow: ellipsis;
         /* display: flex; */
-        position: absolute;
+        /* position: absolute; */
 
     }
     
@@ -592,10 +592,10 @@
     
     .tile{
         color: #fff;
-        padding: 0vw 6vw 0vw 0vh;
-        margin: 0vw 0vh 0vw 0vh;
-        float: left;
-        text-align: center;
+        /* padding: 0vw 6vw 0vw 0vh; */
+        /* margin: 0vw 0vh 0vw 0vh; */
+        /* float: left; */
+        /* text-align: center; */
         font-size: 1.5vh;
         font-family: 'Noto Sans KR',sans-serif;
         display: -webkit-box;
@@ -605,25 +605,25 @@
         overflow: hidden;
         text-overflow: ellipsis;
         /* display: flex; */
-        position: absolute;
+        /* position: absolute; */
     }
     .auth{
         color: #fff;
-        top: 5.5vh;
-        padding: 0vw 0vh 0vw 0vh;
-        margin: 0vw 0vh 0vw 0vh;
-        float: left;
-        text-align: center;
+        top: -2vh;
+        /* padding: 0vw 0vh 0vw 0vh; */
+        /* margin: 0vw 0vh 0vw 0vh; */
+        /* float: left; */
+        /* text-align: center; */
         font-size: 1.5vh;
         font-family: 'Noto Sans KR',sans-serif;
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
-        /* max-width: -1vw; */
+        max-width: -1vw;
         overflow: hidden;
         text-overflow: ellipsis;
-        display: flex;
-        position: absolute;
+        /* display: flex; */
+        /* position: absolute; */
 
     }
     
