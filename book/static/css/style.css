@@ -88,11 +88,11 @@
         width: auto;
         background-color: #03263f;
         position: relative;
-        height: 5vh;
+        height: 3vh;
         color: #fff;
         font-family:"Arial Bold",sans-serif;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 0vh;
     }
     
     
@@ -147,8 +147,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        perspective: 28vw;
-        left : 3vw;
+        perspective: 38vw;
+        left : 0vw;
         top : 1vh;
         position: absolute;
         
@@ -157,8 +157,8 @@
     
     
     .book {
-        width: 9vw;
-        height: 33vh;
+        width: 8vw;
+        height: 32vh;
         position: relative;
         transform-style: preserve-3d;
         transform: rotateY(-30deg);
@@ -235,26 +235,45 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 45vh;
+        height: 47vh;
     
     }
     
     .tile{
         color: #fff;
-        padding: 0px 1vw 0px 0px;
-        margin: 0px 0px 0px 0px;
-        float: left;
+        padding: 0vw 0vh 0vw 0vh;
+        margin: 0vw 0vh 0vw 0vh;
+        /* float: left; */
         text-align: center;
         font-size: 2vh;
         font-family: 'Noto Sans KR',sans-serif;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         max-width: -1vw;
         overflow: hidden;
         text-overflow: ellipsis;
         /* display: flex; */
         position: absolute;
+    }
+    .auth{
+        color: #fff;
+        top: 7vh;
+        padding: 1vw 0vh 0vw 3vh;
+        margin: 0vw 0vh 0vw 0vh;
+        /* float: left; */
+        text-align: -webkit-center;
+        font-size: 2vh;
+        font-family: 'Noto Sans KR',sans-serif;
+        display: -webkit-box;
+        -webkit-line-clamp: 2S;
+        -webkit-box-orient: vertical;
+        max-width: -1vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* display: flex; */
+        position: absolute;
+
     }
     
     .bookCardBody{
@@ -341,7 +360,7 @@
         height : 30vh; 
     }
     .row{
-        height:55vh;
+        height:51vh;
     }
 
     body{
@@ -423,7 +442,8 @@
         color: #fff;
         font-family:"Arial Bold",sans-serif;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 1vh;
+        font-size: 2vh;
     }
     
     
@@ -558,7 +578,7 @@
     
     .cardcontainer{
         background-color: #1f3e53;
-        margin: 0px 0px 0px 0px; 
+        margin: 0vh 0vw 0vh 0vw; 
         padding-left: 2vw;
         padding-right: 2vw;
         padding-top: 2vh;
@@ -572,14 +592,14 @@
     
     .tile{
         color: #fff;
-        padding: 0px 1vw 0px 0px;
-        margin: 0px 0px 0px 0px;
+        padding: 0vw 6vw 0vw 0vh;
+        margin: 0vw 0vh 0vw 0vh;
         float: left;
         text-align: center;
-        font-size: 2vh;
+        font-size: 1.5vh;
         font-family: 'Noto Sans KR',sans-serif;
         display: -webkit-box;
-        -webkit-line-clamp: 1;
+        -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         max-width: -1vw;
         overflow: hidden;
@@ -587,9 +607,28 @@
         /* display: flex; */
         position: absolute;
     }
+    .auth{
+        color: #fff;
+        top: 5.5vh;
+        padding: 0vw 0vh 0vw 0vh;
+        margin: 0vw 0vh 0vw 0vh;
+        float: left;
+        text-align: center;
+        font-size: 1.5vh;
+        font-family: 'Noto Sans KR',sans-serif;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        /* max-width: -1vw; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        position: absolute;
+
+    }
     
     .bookCardBody{
-        height: 22vh;
+        height: 24.3vh;
         width: 32vw;
     }
     
